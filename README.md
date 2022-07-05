@@ -39,7 +39,7 @@ Latest version: [![](https://jitpack.io/v/Innovattic/range-seek-bar.svg)](https:
 Then use the view in your layouts:
 
 ```xml
-<com.innovattic.rangeseekbar.RangeSeekBar
+<com.innovattic.rangeseekbar.RangeSlider
     android:id="@+id/rangeSeekBar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

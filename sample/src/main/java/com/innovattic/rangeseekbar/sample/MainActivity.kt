@@ -2,11 +2,12 @@ package com.innovattic.rangeseekbar.sample
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.innovattic.rangeseekbar.RangeSeekBar
+import com.innovattic.rangeseekbar.RangeSlider
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), RangeSeekBar.SeekBarChangeListener {
+class MainActivity : AppCompatActivity(), RangeSlider.SeekBarChangeListener {
     companion object {
         private val TAG = MainActivity::class.java.simpleName
     }
@@ -26,12 +27,17 @@ class MainActivity : AppCompatActivity(), RangeSeekBar.SeekBarChangeListener {
         Log.i(TAG, "Stopped seeking.")
     }
 
-    override fun onValueChanged(minThumbValue: Int, maxThumbValue: Int) {
-        Log.i(TAG, "Selected range is from $minThumbValue to $maxThumbValue")
-    }
-
     private fun setupRangeSeekBar() {
-        rangeSeekBar.max = 20
-        rangeSeekBar.seekBarChangeListener = this
+        rangebar.max = 50
+        rangebar.min = 30
+        rangebar.setMinThumbVal(40)
+        rangebar.setMaxThumbVal(45)
+        rangebar.labelFormatterListener = RangeSlider.LabelFormatter { value ->
+            "v$value"
+        }
+
+        rangebar.valueChangeListener = RangeSlider.ValueChangeListener { min, max ->
+            Toast.makeText(this, "$min <-> $max", Toast.LENGTH_SHORT).show()
+        }
     }
 }

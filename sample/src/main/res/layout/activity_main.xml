@@ -7,60 +7,23 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.innovattic.rangeseekbar.RangeSeekBar
-        android:id="@+id/rangeSeekBar"
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <com.innovattic.rangeseekbar.RangeSlider
+        android:id="@+id/rangebar"
+        android:layout_gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        app:rsb_trackThickness="20dp"
-        app:rsb_trackSelectedThickness="2dp"
-        app:rsb_trackSelectedColor="@color/colorPrimary"
-        app:rsb_maxThumbOffsetHorizontal="2dp"
-        app:rsb_minThumbOffsetHorizontal="-2dp" />
+        app:rs_initialMaxThumbValue="40"
+        app:rs_initialMinThumbValue="20"
+        app:rs_maxThumbOffsetHorizontal="0dp"
+        app:rs_minRange="1"
+        app:rs_minThumbOffsetHorizontal="0dp"
+        app:rs_trackColor="#A5B8C9"
+        app:rs_trackSelectedColor="#00FEB5"
+        app:rs_trackSelectedThickness="4dp"
+        app:rs_trackThickness="4dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
 
-    <com.innovattic.rangeseekbar.RangeSeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:rsb_initialMaxThumbValue="40"
-        app:rsb_initialMinThumbValue="20"
-        app:rsb_maxThumbDrawable="@drawable/thumb_circle"
-        app:rsb_maxThumbOffsetHorizontal="2dp"
-        app:rsb_minRange="10"
-        app:rsb_minThumbDrawable="@drawable/thumb_circle"
-        app:rsb_minThumbOffsetHorizontal="-2dp"
-        app:rsb_trackColor="#888"
-        app:rsb_trackSelectedColor="#222"
-        app:rsb_trackSelectedThickness="4dp"
-        app:rsb_trackThickness="2dp" />
-
-    <com.innovattic.rangeseekbar.RangeSeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:rsb_maxThumbDrawable="@drawable/thumb_circle"
-        app:rsb_maxThumbOffsetVertical="4dp"
-        app:rsb_minThumbDrawable="@drawable/thumb_circle"
-        app:rsb_minThumbOffsetVertical="-4dp"
-        app:rsb_trackColor="#888"
-        app:rsb_trackSelectedColor="#222"
-        app:rsb_trackSelectedThickness="4dp"
-        app:rsb_trackThickness="2dp" />
-
-    <com.innovattic.rangeseekbar.RangeSeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:rsb_initialMaxThumbValue="15"
-        app:rsb_max="20"
-        app:rsb_maxThumbDrawable="@drawable/thumb_circle"
-        app:rsb_maxThumbOffsetHorizontal="8dp"
-        app:rsb_minRange="5"
-        app:rsb_minThumbDrawable="@drawable/thumb_circle"
-        app:rsb_minThumbOffsetHorizontal="-8dp"
-        app:rsb_sidePadding="32dp"
-        app:rsb_touchRadius="10dp"
-        app:rsb_trackColor="#e0e1e5"
-        app:rsb_trackRoundedCaps="true"
-        app:rsb_trackSelectedColor="#a8d5f5"
-        app:rsb_trackSelectedRoundedCaps="true"
-        app:rsb_trackSelectedThickness="18dp"
-        app:rsb_trackThickness="36dp" />
 </LinearLayout>

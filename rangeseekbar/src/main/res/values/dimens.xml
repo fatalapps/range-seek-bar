@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="rsb_trackDefaultThickness">2dp</dimen>
-    <dimen name="rsb_touchRadius">16dp</dimen>
-    <dimen name="rsb_defaultSidePadding">16dp</dimen>
+    <dimen name="rs_trackDefaultThickness">4dp</dimen>
+    <dimen name="rs_touchRadius">16dp</dimen>
+    <dimen name="rs_defaultSidePadding">16dp</dimen>
+    <dimen name="rs_defaultExtraHeight">50dp</dimen>
+    <dimen name="rs_defaultLabelTextSize">15sp</dimen>
+    <dimen name="rs_labelMarginBottom">6dp</dimen>
 </resources>
