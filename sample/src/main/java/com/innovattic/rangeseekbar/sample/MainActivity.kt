@@ -5,6 +5,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.innovattic.rangeseekbar.RangeSlider
+import com.innovattic.rangeseekbar.WindPicker
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), RangeSlider.SeekBarChangeListener {
@@ -28,16 +29,18 @@ class MainActivity : AppCompatActivity(), RangeSlider.SeekBarChangeListener {
     }
 
     private fun setupRangeSeekBar() {
-        rangebar.max = 50
-        rangebar.min = 30
-        rangebar.setMinThumbVal(40)
-        rangebar.setMaxThumbVal(45)
+        rangebar.max = 200
+        rangebar.min = 0
+        rangebar.setMinThumbVal(0)
+        rangebar.setMaxThumbVal(100)
         rangebar.labelFormatterListener = RangeSlider.LabelFormatter { value ->
-            "v$value"
+            "v-$value"
         }
 
         rangebar.valueChangeListener = RangeSlider.ValueChangeListener { min, max ->
-            Toast.makeText(this, "$min <-> $max", Toast.LENGTH_SHORT).show()
+
+            Toast.makeText(applicationContext, windp.getSelection().toString(), Toast.LENGTH_SHORT).show()
         }
+        windp.setDirections(setOf(WindPicker.Direction.N, WindPicker.Direction.S, WindPicker.Direction.SW))
     }
 }

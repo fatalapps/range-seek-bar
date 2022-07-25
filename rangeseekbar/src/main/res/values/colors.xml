@@ -4,4 +4,9 @@
     <color name="rsb_trackDefaultColor">#cccccc</color>
     <color name="rsb_trackSelectedDefaultColor">#fefefe</color>
     <color name="rs_defaultTextColor">#ffffff</color>
+
+
+    <color name="wind_defaultActive">#40eeee</color>
+    <color name="wind_defaultInactive">#40ee77</color>
+    <color name="wind_defaultITextColor">#000000</color>
 </resources>

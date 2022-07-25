@@ -6,4 +6,8 @@
     <dimen name="rs_defaultExtraHeight">50dp</dimen>
     <dimen name="rs_defaultLabelTextSize">15sp</dimen>
     <dimen name="rs_labelMarginBottom">6dp</dimen>
+
+    <dimen name="wind_textSizeDefault">15sp</dimen>
+    <dimen name="wind_sideHeightDefault">250dp</dimen>
+    <dimen name="wind_innerSmallRadius">32dp</dimen>
 </resources>

@@ -26,4 +26,10 @@
         app:rs_trackThickness="4dp" />
 </androidx.appcompat.widget.LinearLayoutCompat>
 
+    <com.innovattic.rangeseekbar.WindPicker
+        android:id="@+id/windp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="350dp"/>
+
 </LinearLayout>

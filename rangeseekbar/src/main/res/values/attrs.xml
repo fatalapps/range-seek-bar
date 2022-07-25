@@ -22,4 +22,13 @@
         <attr name="rs_trackRoundedCaps" format="boolean" />
         <attr name="rs_trackSelectedRoundedCaps" format="boolean" />
     </declare-styleable>
+
+    <declare-styleable name="WindPicker">
+        <attr name="wind_activeColor" format="color" />
+        <attr name="wind_inactiveColor" format="color" />
+        <attr name="wind_arrowDrawable" format="reference" />
+        <attr name="wind_textSize" format="dimension" />
+        <attr name="wind_textColor" format="color" />
+        <attr name="wind_sideHeight" format="dimension" />
+    </declare-styleable>
 </resources>
